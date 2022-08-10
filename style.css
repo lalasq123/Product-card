@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,700;1,9..144,700&family=Montserrat:ital,wght@0,500;0,700;1,500;1,700&display=swap');
+*{
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 14px;
+  font-family: 'Montserrat','Fraunces',sans-serif;
+  background-color: hsl(30, 38%, 92%);
+  min-height:calc(100vh - 0.1px);
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  width:50%;
+  margin: 5%;
+}
+.card-img{
+  display: flex;
+  flex-direction: column;
+  max-width: 325px;
+}
+.desktop{
+ 
+  border-radius: 10px 0px 0px 10px;
+}
+.mobile{
+  display:none;
+}
+
+.description{
+  max-width:100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  background-color:hsl(0, 0%, 100%);
+  border-radius: 0px 10px 10px 0px;
+}
+
+.description h1{
+  color:hsl(212, 21%, 14%);
+  width: 200px;
+  padding: 1rem 0;
+  font-weight: 700;
+  font-family: 'Fraunces',sans-serif;
+  line-height: 0.9;
+}
+
+.description h4{
+  color:hsl(228, 12%, 48%);
+  font-weight: 500;
+  font-family: 'Montserrat',sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.text p{
+  color:hsl(228, 12%, 48%);
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 500;
+  width: 300px;
+  font-size: 16px;
+  padding: 20px 30px 20px 0px;
+  word-spacing: 2px;
+  line-height: 1.5;
+  
+}
+
+.price{
+  color:hsl(158, 36%, 37%);
+  display: flex;
+  align-items: center;
+}
+
+.item{
+  font-size: 30px;
+  font-family: 'Fraunces',sans-serif;
+   padding-right: 30px;
+}
+
+.item2{
+  font-size: 14px;
+  color:hsl(228, 12%, 48%);
+  font-family: 'Montserrat',sans-serif;
+  font-weight: 500;
+  text-decoration: line-through;
+  
+}
+
+.botao{
+  background-color:hsl(158, 36%, 37%);
+  color:hsl(0, 0%, 100%); 
+  font-family: 'Montserrat',sans-serif;
+  width: 270px;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 2.6rem 0;
+  font-weight:7500;
+  cursor: pointer;
+}
+
+.botao svg{
+  margin-right: 10px;
+}
+
+@media(max-width: 500px) {
+  .container{
+    display: inline-block;
+    margin: 5%;
+    width: 90%;
+  }
+  .mobile{
+    display: block;
+    width:422px;
+    align-items: center;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .desktop{
+    display:none;
+  }
+  .description{
+      border-radius: 0px 0px 10px 10px;
+  }
+  .description h1{ 
+    width: 300px;
+  }
+  .text p{
+    width: 345px;
+    padding: 10px 0px ;
+    
+  }
+  .botao{
+    width: 350px;
+  }
+}
